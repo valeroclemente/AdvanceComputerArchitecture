@@ -1,3 +1,11 @@
+
+/******************NATIVE C THREADS IMPLEMENTATION ******************************************/
+/****************** IMPLEMENTATION SUITABLE FOR MICROSOFT WINDOWS ***********************/
+/************ Dense Matrix-Matrix Multiplication Benchmark *******************************/
+//File Needed: uncompress float.zip to get a matrix for multiplying. 
+//Find files in: Sample Data/float.zip
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <process.h>
