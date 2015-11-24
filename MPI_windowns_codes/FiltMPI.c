@@ -1,3 +1,10 @@
+
+/************************** MPI IMPLEMENTATION ******************************************/
+/****************** IMPLEMENTATION SUITABLE FOR MICROSOFT WINDOWS ***********************/
+/*********************** Image Averaging Filter Benchmark *******************************/
+//FILES NEEDED: bmp file of 8 bits (The repository has a sample file)
+
+
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,6 +12,7 @@
 
 #define MIN(X, Y) (((X) < (Y)) ? (X) : (Y))
 
+//Funtion for reading a image 
 unsigned char* readBMP(char* filename, unsigned char info[54], unsigned char end[1024], int *size)
 {
     int i;
@@ -28,6 +36,7 @@ unsigned char* readBMP(char* filename, unsigned char info[54], unsigned char end
     return data;
 }
 
+//Funtion for writing the output image (filtered image)
 void writeBMP(char* filename, unsigned char* data, unsigned char info[54], unsigned char end[1024], int size){
 
      //Put everything again in a bmp file
@@ -40,7 +49,7 @@ void writeBMP(char* filename, unsigned char* data, unsigned char info[54], unsig
 
 }
 
-/*****************************PROMEDIADOR***********************************************/
+/*****************************   AVERAGING  FILTER  ***********************************************************/
 void promediador(unsigned char *imagen,long TX,long TY, int tam,unsigned char *copia,float DesE,int ini,int fin){
 
     int i,j,mi,mj;
@@ -61,11 +70,15 @@ for(i=0;i<=TY-tam;i++){
 }
 
 }
+
+//Funtion for coping original image
 void copy_image(unsigned char* original, unsigned char *copia, int size){
     int i;
     for(i=0;i<size;i++)
         copia[i] = original[i];
 }
+
+//Main function
 int main(int argc, char *argv[])
 {
     unsigned char* image;
@@ -78,13 +91,17 @@ int main(int argc, char *argv[])
     int TX,TY;
     double startT,stopT;
 
+    //MPI Inicialization
     MPI_Status status;
 
 	MPI_Init(&argc,&argv);
 	MPI_Comm_rank(MPI_COMM_WORLD,&id);
 	MPI_Comm_size(MPI_COMM_WORLD,&p);
-
+	
+    //Call clock for taking time execution
     startT = clock();
+    
+    //Parallelism on MPI
     if(id==0){
        image = readBMP("lady1000.bmp",header,end,&size);
        MPI_Bcast(&size,1,MPI_INT,0,MPI_COMM_WORLD);
