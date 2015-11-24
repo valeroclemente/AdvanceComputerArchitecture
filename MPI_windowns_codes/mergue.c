@@ -1,3 +1,9 @@
+
+/************************** MPI IMPLEMENTATION ******************************************/
+/****************** IMPLEMENTATION SUITABLE FOR MICROSOFT WINDOWS ***********************/
+/*********************** Parallel Merge Sort Benchmark *******************************/
+
+
 #include <stdio.h>
 #include <mpi.h>
 #include <time.h>
@@ -173,6 +179,7 @@ void m_sort(int *A, int min, int max)
 	}
 }
 
+//This function read data for a array. This was done to input the same characteristics to OpenMP and MPI
 void read_data(int *data){
    int i=0;
    FILE *fp;
