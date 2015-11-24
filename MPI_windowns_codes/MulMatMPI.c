@@ -1,3 +1,9 @@
+
+/************************** MPI IMPLEMENTATION ******************************************/
+/****************** IMPLEMENTATION SUITABLE FOR MICROSOFT WINDOWS ***********************/
+/************ Dense Matrix-Matrix Multiplication Benchmark *******************************/
+
+
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,6 +22,7 @@
 
 void ini_mat(double **a,double **b,double **c);
 
+//Main function
 int main (int argc, char *argv[])
 {
     int	tid, nthreads, i, j, k, id, p,sw =0, nt = 4, amount, ini=0, fin;
@@ -61,8 +68,7 @@ int main (int argc, char *argv[])
         for(i=0;i<ROW;i++)
             MPI_Bcast(b[i],COL,MPI_DOUBLE,0,MPI_COMM_WORLD);
     }
-
-    // int inia=0;
+    
      amount = ROW / p;
      int dif = ROW - (amount * p);
      i = id;
@@ -99,14 +105,6 @@ int main (int argc, char *argv[])
 
         stopT = clock();
         printf("%d processors; %f secs\n",id,(stopT-startT)/CLOCKS_PER_SEC);
-   /*
-        for(i=0;i<ROW;i++){
-            for(j=0;j<COL;j++){
-               printf("%.2lf ",c[i][j]);
-            }
-            printf("\n");
-        }
-    */
    }
    else{
        for (i=ini; i<fin; i++)
@@ -120,13 +118,13 @@ int main (int argc, char *argv[])
 return 0;
 }
 
+//This function read a huge matrix in order to provide the same input to OpenMP and MPI
 void ini_mat(double **a,double **b,double **c){
    int i,j;
 
    FILE *fp;
    fp = fopen("float.txt","r");
-
- //  printf("Initializing matrix\n");
+   
    for (i=0; i<ROW; i++)
     for (j=0; j<COL; j++)
        fscanf(fp,"%lf",&a[i][j]);
