@@ -1,3 +1,10 @@
+
+/************************** OpenMP IMPLEMENTATION ******************************************/
+/****************** IMPLEMENTATION SUITABLE FOR LINUX UBUNTU ***********************/
+/**********************Parallel Merge Sort Benchmark *******************************/
+//FILES NEEDED: Uncompress data.zip for a sample of array 
+//Find files in: Sample Data/data.zip
+
 #include <stdio.h>
 #include <time.h>
 #include <omp.h>
