@@ -3,6 +3,7 @@
 /****************** IMPLEMENTATION SUITABLE FOR MICROSOFT WINDOWS ***********************/
 /************ Dense Matrix-Matrix Multiplication Benchmark *******************************/
 //File Needed: uncompress float.zip to get a matrix for multiplying. 
+//Find files in: Sample Data/float.zip
 
 
 #include <mpi.h>
