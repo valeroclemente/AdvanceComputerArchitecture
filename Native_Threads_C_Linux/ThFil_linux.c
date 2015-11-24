@@ -1,3 +1,11 @@
+
+/************************** NATIVE C THREADS IMPLEMENTATION ********************************/
+/****************** IMPLEMENTATION SUITABLE FOR LINUX UBUNTU ******************************/
+/*********************** Image Averaging Filter Benchmark *******************************/
+//FILES NEEDED: bmp file of 8 bits (The repository has a sample file)
+//Find files in: Sample Data/lady1000.bmp
+
+
 #include <iostream>
 #include <thread>
 #define MIN(X, Y) (((X) < (Y)) ? (X) : (Y))
