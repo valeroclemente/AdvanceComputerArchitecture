@@ -45,4 +45,10 @@ In this folder, you can find the three adapted benchmarks used on Native C Threa
   2. ThMulMat_linux.c: Dense Matrix-Matrix Multiplication Benchmark
   3. ThMerge_linux.c: Parallel Merge Sort Benchmark
 
+Folder Serial_Codes
+In this folder, you can find the three benchmark in serial code
+  1. FiltSerial.c: Image Averaging Filter Benchmark
+  2. MulMatSerial.c: Dense Matrix-Matrix Multiplication Benchmark
+  3. MergeSerial.c: Parallel Merge Sort Benchmark
+
 
