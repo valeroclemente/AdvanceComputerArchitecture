@@ -1,3 +1,10 @@
+
+/************************** OpenMP IMPLEMENTATION ******************************************/
+/****************** IMPLEMENTATION SUITABLE FOR MICROSOFT WINDOWS ***********************/
+/*********************** Image Averaging Filter Benchmark *******************************/
+//FILES NEEDED: bmp file of 8 bits (The repository has a sample file)
+//Find files in: Sample Data/lady1000.bmp
+
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -38,7 +45,7 @@ void writeBMP(char* filename, unsigned char* data, unsigned char info[54], unsig
 
 }
 
-/*****************************PROMEDIADOR***********************************************/
+/*****************************AVERAGING FILTER*******************************************/
 void promediador(unsigned char *imagen,long TX,long TY, int tam,unsigned char *copia,float DesE){
 
     int i,j,mi,mj;
