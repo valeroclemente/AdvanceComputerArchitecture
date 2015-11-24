@@ -32,3 +32,10 @@ In this folder, you can find the three adapted benchmarks used on OpenMP suitabl
   1. FiltOpenmp_linux.c: Image Averaging Filter Benchmark
   2. MulMatOpenmp_linux.c: Dense Matrix-Matrix Multiplication Benchmark
   3. mergeOpenMP_linux.c: Parallel Merge Sort Benchmark
+
+Folder Native_Threads_C_windows
+In this folder, you can find the three adapted benchmarks used on Native C Threads for Windows
+  1. ThFil_windows.c: Image Averaging Filter Benchmark
+  2. ThMulMat_windows.c: Dense Matrix-Matrix Multiplication Benchmark
+  3. ThMerge_windows.c: Parallel Merge Sort Benchmark
+
