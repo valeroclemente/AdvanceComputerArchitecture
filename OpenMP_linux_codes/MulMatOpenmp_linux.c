@@ -1,3 +1,10 @@
+
+/************************** OpenMP IMPLEMENTATION ******************************************/
+/****************** IMPLEMENTATION SUITABLE FOR LINUX UBUNTU *******************************/
+/**********************Dense Matrix-Matrix Multiplication Benchmark *******************************/
+//FILES NEEDED: Uncompress float.zip for a sample of matrix 
+//Find files in: Sample Data/float.zip
+
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
