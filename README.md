@@ -14,10 +14,21 @@ Folder MPI_windows_codes
   1. FitMPI.c: Image Averaging Filter Benchmark
   2. MulMatMPI.c: Dense Matrix-Matrix Multiplication Benchmark
   3. Merge.c: Parallel Merge Sort Benchmark
-  Also, you can find a image for being used with FitMPI.c 
   
 Folder OpenMP_windows_codes
 In this folder, you can find the three adapted benchmarks used on OpenMP. 
   1. FiltOpenmp.c: Image Averaging Filter Benchmark
   2. MulMatOpenMP.c: Dense Matrix-Matrix Multiplication Benchmark
   3. mergeOpenMP.c: Parallel Merge Sort Benchmark
+
+Folder MPI_linux_codes
+  In this folder, you can find the three adapted benchmarks used on MPI suitable for Linux. 
+  1. FitMPI_linux.c: Image Averaging Filter Benchmark
+  2. MulMatMPI_linux.c: Dense Matrix-Matrix Multiplication Benchmark
+  3. MergeMPI_linux.c: Parallel Merge Sort Benchmark
+  
+Folder OpenMP_linux_codes
+In this folder, you can find the three adapted benchmarks used on OpenMP suitable for Linux. 
+  1. FiltOpenmp_linux.c: Image Averaging Filter Benchmark
+  2. MulMatOpenmp_linux.c: Dense Matrix-Matrix Multiplication Benchmark
+  3. mergeOpenMP_linux.c: Parallel Merge Sort Benchmark
