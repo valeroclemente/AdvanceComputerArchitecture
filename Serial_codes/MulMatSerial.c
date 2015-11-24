@@ -1,3 +1,9 @@
+
+/************************** SERIAL CODE IMPLEMENTATION ******************************************/
+/**********************Dense Matrix-Matrix Multiplication Benchmark *******************************/
+//FILES NEEDED: Uncompress float.zip for a sample of matrix 
+//Find files in: Sample Data/float.zip
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
