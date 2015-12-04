@@ -19,7 +19,7 @@ unsigned char* readBMP(char* filename, unsigned char info[54], unsigned char end
 
     fread(info, sizeof(unsigned char), 54, f); // read the 54-byte header
 
-    // extract image height and width from header
+    // extract image height and width from header//
     int width = *(int*)&info[18];
     int height = *(int*)&info[22];
 
