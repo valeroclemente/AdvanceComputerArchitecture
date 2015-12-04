@@ -1,7 +1,7 @@
 
 /************************** NATIVE C THREADS IMPLEMENTATION ********************************/
 /****************** IMPLEMENTATION SUITABLE FOR LINUX UBUNTU ******************************/
-/*********************** Image Averaging Filter Benchmark *******************************/
+/*********************** Image Averaging Filter Benchmark ********************************/
 //FILES NEEDED: bmp file of 8 bits (The repository has a sample file)
 //Find files in: Sample Data/lady1000.bmp
 
