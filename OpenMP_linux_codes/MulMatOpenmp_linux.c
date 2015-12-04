@@ -15,7 +15,7 @@
 
 #define NRA ROW   /* number of rows in matrix A */
 #define NCA COL   /* number of columns in matrix A */
-#define NCB COL   /* number of columns in matrix B */
+#define NCB COL   /* number of columns in matrix B *///
 
 
 void ini_mat(double **a,double **b,double **c);
