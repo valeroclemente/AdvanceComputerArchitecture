@@ -4,6 +4,17 @@ Parallel Computer: Performance and Power Consumption Evaluation of OpenMP and MP
 The following files implements three different benchmarks to measure performance on MPI and OpenMP. 
 Each file was developed on C++.
 
+Requeriments:
+We assume you already installed MPI and OpenMP to running these codes. 
+
+Library Versions:
+MPI
+Microsoft Windows -> MPI version 1.6.1
+Linux Ubuntu ->  MPI version 1.10
+OpenMP
+Microsoft Windows ->  Libgomp 3.1 201107
+Linux Ubuntu -> Libgomp 3.1 201107
+
 The Sample Data for all implementation can be found in Sample Data folder
   1. lady1000.bmp (sample data for Image Averaging Filter Benchmark)
   2. float.zip (sample data for Dense Matrix-Matrix Multiplication Benchmark)
