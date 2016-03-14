@@ -137,4 +137,3 @@ void ini_mat(double **a,double **b,double **c){
 
   fclose(fp);
 }
-
