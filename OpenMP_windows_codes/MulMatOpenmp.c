@@ -1,6 +1,6 @@
 
 /************************** OpenMP IMPLEMENTATION ******************************************/
-/****************** IMPLEMENTATION SUITABLE FOR MICROSOFT WINDOWS ***********************/
+/******************** IMPLEMENTATION SUITABLE FOR MICROSOFT WINDOWS ***********************/
 /**********************Dense Matrix-Matrix Multiplication Benchmark *******************************/
 //FILES NEEDED: Uncompress float.zip for a sample of matrix 
 //Find files in: Sample Data/float.zip
