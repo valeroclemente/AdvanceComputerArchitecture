@@ -1,7 +1,7 @@
 
 
 /************************** OpenMP IMPLEMENTATION ******************************************/
-/****************** IMPLEMENTATION SUITABLE FOR MICROSOFT WINDOWS ***********************/
+/******************** IMPLEMENTATION SUITABLE FOR MICROSOFT WINDOWS ***********************/
 /**********************Parallel Merge Sort Benchmark *******************************/
 //FILES NEEDED: Uncompress data.zip for a sample of array 
 //Find files in: Sample Data/data.zip
