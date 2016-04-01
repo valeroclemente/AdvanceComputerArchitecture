@@ -1,6 +1,6 @@
 
 
-/************************** MPI IMPLEMENTATION ******************************************/
+/**************************** MPI IMPLEMENTATION ******************************************/
 /****************** IMPLEMENTATION SUITABLE FOR LINUX UBUNTU ***********************/
 /*********************** Parallel Merge Sort Benchmark *******************************/
 //FILES NEEDED: uncompress data.zip that contains the array to sort.
