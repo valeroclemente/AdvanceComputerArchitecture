@@ -1,6 +1,6 @@
 
 /************************** SERIAL CODE IMPLEMENTATION ******************************************/
-/**********************Dense Matrix-Matrix Multiplication Benchmark *******************************/
+/***********************Dense Matrix-Matrix Multiplication Benchmark *******************************/
 //FILES NEEDED: Uncompress float.zip for a sample of matrix 
 //Find files in: Sample Data/float.zip
 
