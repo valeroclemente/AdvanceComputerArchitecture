@@ -1,6 +1,6 @@
 
 /************************** MPI IMPLEMENTATION ******************************************/
-/****************** IMPLEMENTATION SUITABLE FOR MICROSOFT WINDOWS ***********************/
+/******************** IMPLEMENTATION SUITABLE FOR MICROSOFT WINDOWS ***********************/
 /*********************** Parallel Merge Sort Benchmark *******************************/
 //FILES NEEDED: uncompress data.zip that contains the array to sort.
 //Find files in: Sample Data/data.zip
