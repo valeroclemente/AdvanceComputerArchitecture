@@ -1,7 +1,7 @@
 
 /*******************NATIVE C THREADS IMPLEMENTATION ******************************************/
 /****************** IMPLEMENTATION SUITABLE FOR LINUX UBUNTU *********************************/
-/*********************** Parallel Merge Sort Benchmark *******************************/
+/************************* Parallel Merge Sort Benchmark *******************************/
 //FILES NEEDED: uncompress data.zip that contains the array to sort.
 //Find files in: Sample Data/data.zip
 
